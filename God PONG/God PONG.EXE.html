@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GodPong</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(136, 136, 136);
+        }
+        #gameContainer {
+            position: relative;
+        }
+        #scoreboard {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            display: block;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="scoreboard">
+            Player: <span id="playerScore">0</span> - Opponent: <span id="opponentScore">0</span>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    <script src="GODpongDATA.js"></script>
+</body>
+</html>
